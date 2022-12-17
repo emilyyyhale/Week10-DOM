@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container">
+    <br>
+    <h1 class="text-light bg-dark">Em & Co. Employee Management Portal</h1>
+    <br>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div clss="form-group">
+                        <label for="new-start-date">Hire Date</label>
+                        <input type="date" class="form-control" id="new-start-date">
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-end-date">Termination Date</label>
+                        <input type="date" class="form-control" id="new-end-date">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div clss="form-group">
+                        <label for="new-name">Employee Name</label>
+                        <input type="text" class="form-control" id="new-name" placeholder="Name">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id="add" class="btn btn-warning form-control">Submit</button> <!--event listener-->
+            </div>
+        </div>
+    </div>
+    <table id="list" class="table table-dark table-striped"> <!--table to access-->
+        <tr>
+            <th>Name</th>
+            <th>Date Created</th>
+            <th>Hire Date</th>
+            <th>Term Date</th>
+        </tr>
+    </table>
+
+    <script src="project.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
